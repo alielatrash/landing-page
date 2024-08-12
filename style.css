@@ -1,0 +1,201 @@
+/* * {
+    outline: 1px red solid;
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Public Sans", sans-serif;
+}
+
+
+/* HEADER */
+
+.header {
+    background-color: white;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.header-container {
+    background-color: white;
+    transition: all 0.4s;
+    /* outline: 2px red solid; */
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .header-container img {
+    padding: 15px;
+    width: 90px;
+    height: 100%;
+}
+
+.header .header-container  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    min-width: max-content;
+}
+
+.header-container ul a {
+    padding: 8px 24px;
+    /* border: 2px #5d6771 solid; */
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: #5d6771;
+}
+
+
+.header .header-container button {
+    box-sizing: border-box;
+    height: 40px;
+    background-color:rgb(58, 87, 255);
+    font-size: 14px;
+    padding: 8px 24px;
+    border-radius: 10px;
+    border: none;
+}
+
+.header .header-container  button a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+}
+
+/* HERO */
+
+.hero-section {
+    padding: 85px 32px;
+    background-color: #f5f7fa;
+    background-image: radial-gradient(circle, rgba(240, 240, 240, 0) 57%, #fff), url("imgs/Background-image.svg"), url("imgs/Hero-Background-Texture.webp");
+    background-repeat: repeat, repeat, no-repeat;
+    background-size: auto, 800px, cover;
+    background-attachment: scroll, scroll, fixed;
+
+}
+
+.hero-container {
+    /* outline: 2px red solid; */
+    max-width: 1280px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 1280px;
+    /* border: 4px green solid; */
+    padding: 55px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left-hero {
+    /* border: 4px yellow solid; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-width: 640px;
+}
+
+.right-hero {
+    /* border: 4px blue solid; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 550px;
+}
+
+.right-hero img {
+    max-width: 105%;
+}
+
+h1 {
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 500;
+    letter-spacing: -2px;
+    margin: 15px 0;
+    padding: 0;
+    color: #333;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #333;
+    justify-self: flex-start;
+    padding: 0;
+    margin: 0;
+    max-width: 640px;
+}
+
+h4 {
+    font-size: 19px;
+    font-weight: 300;
+    color: #333;
+}
+
+h4 span {
+    color: #0054ff;
+    font-weight: bold;
+}
+
+
+.main-hero-items-container {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    max-width: 640px;
+    flex-wrap: wrap;
+}
+
+.items-container {
+    background-color: rgba(255, 255, 255, .73);
+    padding: 15px 5px;
+    display: flex;
+    border-color: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 184px;
+}
+
+#upload-file {
+    background-color: transparent;
+    border: 1px #333 dashed;
+}
+
+.items-container button {
+    background-color: transparent;
+    border: none;
+
+}
+
+.items-container button a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
