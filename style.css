@@ -568,5 +568,52 @@ h6 {
 /* ------------- FOOTER --------------- */ 
 
 .footer-section {
-    
+    height: 250px;
+    background-image: linear-gradient(rgba(58, 87, 255, .94), rgba(58, 87, 255, .94)), url('imgs/Yellow-flower-close-up.jpg'); 
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 70%;
+    background-position: 0 0, 50% 100%;
+    background-size: auto, cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    padding-top: 25px;
+    text-align: center;
+    color: white;
+    font-weight: 200;
+    font-size: 14px;
+
+}
+
+.footer-section ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+
+}
+
+
+.footer ul li {
+    min-width: 100px;
+}
+
+.footer ul li:hover {
+    background-color: white;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section p {
+    border-top: white 1px solid;
+    padding: 25px;
+
 }
