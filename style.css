@@ -73,18 +73,38 @@ body {
     border: none;
 }
 
+.header .header-container button:hover {
+    background-color: black;
+}
+
 .header .header-container  button a {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
+    line-height: 24px;
     font-size: 12px;
-    letter-spacing: 0.8px;
+    letter-spacing: -.02em;
+}
+
+li {
+    align-items: center;
+    box-sizing: border-box;
+    height: 40px;
+    font-size: 14px;
+    padding: 10px 0px;
+    border-radius: 10px;
+    border: none;
+}
+
+li:hover {
+    background-color: #f3f5fb;
 }
 
 /* HERO */
 
 .hero-section {
+    /* outline: green 2px solid; */
     padding: 85px 32px;
     background-color: #f5f7fa;
     background-image: radial-gradient(circle, rgba(240, 240, 240, 0) 57%, #fff), url("imgs/Background-image.svg"), url("imgs/Hero-Background-Texture.webp");
@@ -162,16 +182,23 @@ h4 span {
     font-weight: bold;
 }
 
+.main-hero-container {
+    /* outline: blue 2px solid; */
+    margin-top: 15px;
+}
 
 .main-hero-items-container {
+    /* outline: 2px red solid; */
     display: flex;
     gap: 10px;
     width: 100%;
     max-width: 640px;
     flex-wrap: wrap;
+    margin-top: -15px;
 }
 
 .items-container {
+    box-sizing: border-box;
     background-color: rgba(255, 255, 255, .73);
     padding: 15px 5px;
     display: flex;
@@ -198,4 +225,68 @@ h4 span {
     color: black;
     font-size: 16px;
     font-weight: 500;
+}
+
+.email-container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, .73);
+    width: 100%;
+    max-width: 572px;
+    height: 100px;
+    border-radius: 5px;
+    justify-content: space-between;
+
+}
+
+.email-container p {
+    flex: 1;
+    padding: 2px 15px;
+    font-size: 14px;
+    color: #bbbbbc;
+}
+
+.email-container button {
+    background-color: #0054ff;
+    width: 120px;
+    align-self: flex-end;
+    margin: 15px 15px;
+    border-radius: 5px;
+    padding: 5px 15px;
+    border: none;
+}
+
+.email-container button a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+/* FEATURES */
+
+.features-section {
+    /* outline: 2px red solid; */
+    margin: 0px;
+    padding: 0px;
+}
+
+.features-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h2 {
+    text-align: center;
+    box-sizing: border-box;
+    width: 672px;
+    height: 113px;
+    font-size: 31px;
+    height: 41; 
+    color: #333;
+    font-weight: 300;
+    letter-spacing: -1px;
 }
